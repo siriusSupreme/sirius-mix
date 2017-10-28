@@ -55,9 +55,9 @@ module.exports = function () {
 
         plugins.push(
             new WebpackNotifierPlugin({
-                title: 'Laravel Mix',
+                title: 'Sirius Mix',
                 alwaysNotify: Config.notifications.onSuccess,
-                contentImage: Mix.paths.root('node_modules/laravel-mix/icons/laravel.png')
+                contentImage: Mix.paths.root('node_modules/sirius-mix/icons/sirius.png')
             })
         );
     }

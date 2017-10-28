@@ -1,10 +1,10 @@
 /*
  |--------------------------------------------------------------------------
- | Welcome to Laravel Mix!
+ | Welcome to Sirius Mix!
  |--------------------------------------------------------------------------
  |
- | Laravel Mix provides a clean, fluent API for defining basic webpack
- | build steps for your Laravel application. Mix supports a variety
+ | Sirius Mix provides a clean, fluent API for defining basic webpack
+ | build steps for your Sirius application. Mix supports a variety
  | of common CSS and JavaScript pre-processors out of the box.
  |
  */
@@ -30,18 +30,18 @@ global.Mix = new (require('./Mix'))();
 
 
 /**
- * If we're working in a Laravel app, we'll explicitly
+ * If we're working in a Sirius app, we'll explicitly
  * set the default public path, as a convenience.
  */
 
-if (Mix.sees('laravel')) {
+if (Mix.sees('sirius')) {
     Config.publicPath = 'public';
 }
 
 
 /**
  * If the user activates hot reloading, with the --hot
- * flag, we'll record it as a file, so that Laravel
+ * flag, we'll record it as a file, so that Sirius
  * can detect it and update its mix() url paths.
  */
 

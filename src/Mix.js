@@ -55,7 +55,7 @@ class Mix {
      * @param {string} tool
      */
     sees(tool) {
-        if (tool === 'laravel') {
+        if (tool === 'sirius') {
             return File.exists('./artisan');
         }
 
