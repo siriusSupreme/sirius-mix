@@ -93,7 +93,7 @@
   },
   "os":[],
   "cpu":[],
-  "private": true,
+  "private": false,
   "publishConfig": {
 
   }
