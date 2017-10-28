@@ -1,6 +1,6 @@
 {
   "name": "sirius-mix",
-  "version": "1.0.0",
+  "version": "0.0.9",
   "description": "Sirius Mix is an elegant wrapper around Webpack for the 80% use case.",
   "keywords": [
     "webpack",
