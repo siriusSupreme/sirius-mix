@@ -56,7 +56,7 @@ class Mix {
      */
     sees(tool) {
         if (tool === 'sirius') {
-            return File.exists('./artisan');
+            return File.exists('./sirius');
         }
 
         return false;
