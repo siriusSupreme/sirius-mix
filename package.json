@@ -1,34 +1,40 @@
 {
-  "_from": "laravel-mix@^1.0",
-  "_id": "laravel-mix@1.5.1",
-  "_inBundle": false,
-  "_integrity": "sha512-K/ONuWY339mpUfK5BUN9B5ZExl/GGGplQXJGh3bB19HRm7uGpCLTbnxekFLhYd9tOlS/kQ6TwfGnFMKlhd6QBA==",
-  "_location": "/laravel-mix",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "range",
-    "registry": true,
-    "raw": "laravel-mix@^1.0",
-    "name": "laravel-mix",
-    "escapedName": "laravel-mix",
-    "rawSpec": "^1.0",
-    "saveSpec": null,
-    "fetchSpec": "^1.0"
-  },
-  "_requiredBy": [
-    "#DEV:/"
+  "name": "laravel-mix",
+  "version": "1.0.0",
+  "description": "Sirius Mix is an elegant wrapper around Webpack for the 80% use case.",
+  "keywords": [
+    "webpack",
+    "sirius mix"
   ],
-  "_resolved": "https://registry.npmjs.org/laravel-mix/-/laravel-mix-1.5.1.tgz",
-  "_shasum": "987b7bfab1892a430d6581e868d8651922929f1a",
-  "_spec": "laravel-mix@^1.0",
-  "_where": "F:\\ceshi\\laravel_api",
-  "author": {
-    "name": "Jeffrey Way"
-  },
+  "homepage": "https://github.com/siriusSupreme/sirius-mix#readme",
   "bugs": {
-    "url": "https://github.com/JeffreyWay/laravel-mix/issues"
+    "url": "https://github.com/siriusSupreme/sirius-mix/issues",
+    "email":"guoplc@163.com"
   },
-  "bundleDependencies": false,
+  "license": "MIT",
+  "author": "siriusSupreme",
+  "contributors": [
+    {
+      "name": "siriusSupreme",
+      "email": "guoplc@163.com"
+    }
+  ],
+  "main": "src/index.js",
+  "bin":{},
+  "man":[],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siriusSupreme/sirius-mix.git"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development webpack --watch --progress --hide-modules",
+    "hmr": "NODE_ENV=development webpack-dev-server --inline --hot",
+    "posttest": "nyc report --reporter=html",
+    "production": "NODE_ENV=production webpack --progress --hide-modules",
+    "test": "sudo nyc ava --verbose",
+    "webpack": "NODE_ENV=development webpack --progress --hide-modules"
+  },
+  "config":{},
   "dependencies": {
     "autoprefixer": "^7.1.1",
     "babel-core": "^6.24.1",
@@ -66,8 +72,6 @@
     "webpack-notifier": "^1.5.0",
     "yargs": "^8.0.1"
   },
-  "deprecated": false,
-  "description": "Laravel Mix is an elegant wrapper around Webpack for the 80% use case.",
   "devDependencies": {
     "ava": "^0.19.1",
     "mock-fs": "^4.3.0",
@@ -77,30 +81,20 @@
     "sinon": "^2.3.2",
     "vue": "^2.5.0"
   },
+  "peerDependencies": {
+
+  },
+  "bundledDependencies": [],
+  "optionalDependencies": {
+
+  },
   "engines": {
     "node": ">=6.0.0"
   },
-  "homepage": "https://github.com/JeffreyWay/laravel-mix#readme",
-  "keywords": [
-    "laravel",
-    "webpack",
-    "laravel elixir",
-    "laravel mix"
-  ],
-  "license": "MIT",
-  "main": "src/index.js",
-  "name": "laravel-mix",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JeffreyWay/laravel-mix.git"
-  },
-  "scripts": {
-    "dev": "NODE_ENV=development webpack --watch --progress --hide-modules",
-    "hmr": "NODE_ENV=development webpack-dev-server --inline --hot",
-    "posttest": "nyc report --reporter=html",
-    "production": "NODE_ENV=production webpack --progress --hide-modules",
-    "test": "sudo nyc ava --verbose",
-    "webpack": "NODE_ENV=development webpack --progress --hide-modules"
-  },
-  "version": "1.5.1"
+  "os":[],
+  "cpu":[],
+  "private": true,
+  "publishConfig": {
+
+  }
 }
